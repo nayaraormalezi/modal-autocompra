@@ -1,0 +1,66 @@
+:root {
+  /* Figma design tokens — modal de recuperação */
+  --color-title: #003672;
+  --color-body: #212529;
+  --color-primary: #005fc8;
+  --color-white: #ffffff;
+  --color-overlay: rgba(0, 0, 0, 0.5);
+
+  --font-family: 'CAIXA Std', system-ui, -apple-system, sans-serif;
+
+  --modal-max-width: 735px;
+  --modal-content-width: 695px;
+  --modal-padding-x: 20px;
+  --modal-padding-y: 12px;
+
+  --title-size: 32px;
+  --title-line-height: 48px;
+  --body-size: 14px;
+  --body-line-height: 21px;
+  --button-size: 16px;
+  --button-line-height: 43.2px;
+
+  --button-height: 60px;
+  --button-border-width: 0.625px;
+  --illustration-height: 193px;
+  --description-max-width: 452px;
+
+  --spacing-title-py: 16px;
+  --spacing-description-pb: 20px;
+  --spacing-button-pb: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: #f8f9fa;
+  color: var(--color-body);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

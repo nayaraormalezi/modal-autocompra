@@ -1,0 +1,117 @@
+.page {
+  min-height: 100vh;
+  padding: 24px 16px 48px;
+}
+
+.header {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.pageTitle {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-title);
+}
+
+.pageSubtitle {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-body);
+}
+
+.main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px;
+  background: var(--color-white);
+  border: 1px solid #e9ecef;
+}
+
+.stepIndicator {
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--color-body);
+}
+
+.input {
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #dee2e6;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.navButton {
+  flex: 1;
+  height: 44px;
+  border: 1px solid var(--color-primary);
+  background: var(--color-white);
+  color: var(--color-primary);
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.navButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.navButtonPrimary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.demoActions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 1px solid #e9ecef;
+}
+
+.demoButton {
+  height: 40px;
+  border: 1px dashed #adb5bd;
+  background: #f8f9fa;
+  color: #495057;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.debug {
+  margin: 16px 0 0;
+  font-size: 12px;
+  color: #868e96;
+}
