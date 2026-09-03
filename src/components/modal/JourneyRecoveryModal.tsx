@@ -1,17 +1,20 @@
 import { useId } from 'react';
 import { AccessibleModal } from './AccessibleModal';
 import { FigmaModalLayout } from './FigmaModalLayout';
+import { buildRecoveryTitle } from '@/lib/getFirstName';
 
 interface JourneyRecoveryModalProps {
   open: boolean;
   onContinue: () => void;
   onStartOver: () => void;
+  firstName?: string;
 }
 
 export function JourneyRecoveryModal({
   open,
   onContinue,
   onStartOver,
+  firstName,
 }: JourneyRecoveryModalProps) {
   const titleId = useId();
   const descriptionId = useId();
@@ -25,7 +28,7 @@ export function JourneyRecoveryModal({
       <FigmaModalLayout
         titleId={titleId}
         descriptionId={descriptionId}
-        title="Você já começou a simular seu consórcio."
+        title={buildRecoveryTitle(firstName)}
         description="Encontramos informações do seu consórcio que você começou anteriormente. Deseja continuar de onde parou?"
         secondaryButton={{
           label: 'Começar novamente',

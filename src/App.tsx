@@ -5,6 +5,7 @@ import {
   JourneyRestartConfirmModal,
 } from '@/components/modal';
 import { useJourneyRecovery, createJourneyHelpers } from '@/hooks/useJourneyRecovery';
+import { getFirstName } from '@/lib/getFirstName';
 import { journeyStorage } from '@/lib/journeyStorage';
 import '@/styles/index.css';
 import styles from './App.module.css';
@@ -179,6 +180,7 @@ function AutocompraDemo() {
         open={showRecoveryModal}
         onContinue={handleContinue}
         onStartOver={handleStartOverRequest}
+        firstName={getFirstName(savedJourney?.data)}
       />
 
       <JourneyRestartConfirmModal
